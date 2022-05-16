@@ -3,10 +3,10 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import sessionmaker
 
-Server = 'GHIT-BPO-003\FARHANSERVER'
+Server = 'UTICA-4\SQLEXPRESS'
 # port='8133'
-User='sa'
-Password ='farhan123'
+#User='sa'
+#Password ='farhan123'
 Database = 'Datakeying'
 Driver = 'ODBC Driver 17 for SQL Server'
 
@@ -19,7 +19,7 @@ Driver2='ODBC Driver 17 for SQL Server'
 
 # SQLALCHAMY_DATABASE_URL = 'mysql+pymysql://root:''@127.0.0.1:3306/p19003'
 
-SQLALCHAMY_DATABASE_URL = f'mssql://{User}:{Password}@{Server}/{Database}?driver={Driver}'
+SQLALCHAMY_DATABASE_URL = f'mssql://{Server}/{Database}?driver={Driver}'
 
 SQLALCHAMY_DATABASE_URL2 = f'mssql://{User2}:{Password2}@{Server2}/{Database2}?driver={Driver2}'
 
